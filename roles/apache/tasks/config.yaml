@@ -1,0 +1,7 @@
+---
+- name: Copying website apache config via rendering
+  ansible.builtin.template:
+     src: 000-default.conf.j2
+     dest: "{{ destination_config }}" 
+  when: ansible_facts.os_family == "Debian"
+  notify: Restart Apache
