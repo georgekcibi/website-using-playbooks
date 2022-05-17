@@ -95,3 +95,6 @@ From the output you can see Apache, PHP, MYSQL are installed and apache custom c
 
 
 ### Load the remote server IP and you can see index.php file loading
+
+![Alt text](https://github.com/georgekcibi/website-using-playbooks/blob/main/Screenshot%20from%202022-05-18%2001-19-27.png)
+
