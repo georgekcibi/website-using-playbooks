@@ -1,0 +1,3 @@
+---
+- name: Installing PHP packages
+  include_tasks: php.yaml
