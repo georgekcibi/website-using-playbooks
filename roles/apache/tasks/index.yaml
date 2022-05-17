@@ -1,0 +1,5 @@
+---
+- name: Copying website index.php file via rendering
+  ansible.builtin.template:
+     src: templates/index.php.j2
+     dest: "{{ doc_root_location }}/index.php
