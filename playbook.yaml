@@ -1,0 +1,12 @@
+---
+-
+ name: Installing LAMP stack and deploying test index.php website
+ hosts: aws
+ become: true
+
+
+ roles:
+     - apache
+     - php
+     - mysql
+     - user_creation
