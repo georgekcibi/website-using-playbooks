@@ -1,0 +1,3 @@
+---
+- name: Creating user Bob and adding my.cnf file
+  include_tasks: user.yaml
