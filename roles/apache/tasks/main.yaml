@@ -1,0 +1,12 @@
+---
+- name: Installing Apache
+  include_tasks: apache.yaml
+  ignore_errors: yes
+
+
+- name: Copying apache config
+  include_tasks: config.yaml
+
+
+- name: Copying index file
+  include_tasks: index.yaml
