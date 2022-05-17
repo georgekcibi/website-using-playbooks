@@ -1,0 +1,6 @@
+---
+- name: Installing MYSQL
+  include_tasks: mysql.yaml
+
+- name: Resetting MYSQL root password and changing MYSQL plugin
+  shell: mysql -u root -e 'ALTER USER "root"@"localhost" IDENTIFIED WITH mysql_native_password BY "{{ password }}";'
