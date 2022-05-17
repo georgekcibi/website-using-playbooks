@@ -1,0 +1,15 @@
+---
+- name: Installing Apache
+  ansible.builtin.apt:
+   name: apache2
+   state: present
+   update_cache: yes
+  when: ansible_facts.os_family == "Debian"
+  notify: Restart Apache
+
+- name: Installing HTTPD
+  ansible.builtin.yum:
+   name: httpd
+   state: present
+   update_cache: yes
+  when: ansible_facts['os_family'] == "CentOS"
