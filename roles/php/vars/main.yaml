@@ -1,0 +1,12 @@
+---
+php_variables:
+ - name: php
+ - name: php-mysql
+ - name: php-curl
+ - name: php-gd
+ - name: php-exif
+ - name: php-mysqli
+ - name: php-opcache
+ - name: php-zip
+ - name: php-pear
+ - name: php-mbstring
