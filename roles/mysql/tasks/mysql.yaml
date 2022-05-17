@@ -1,0 +1,7 @@
+---
+- name: Installing MYSQL
+  ansible.builtin.apt:
+   name: mysql-server
+   state: present
+   update_cache: yes
+  notify: Restart MYSQL
