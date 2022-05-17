@@ -92,3 +92,6 @@ aws                        : ok=17   changed=10   unreachable=0    failed=0    s
 ```
 
 From the output you can see Apache, PHP, MYSQL are installed and apache custom configuration file and index.php file being copied to the remote server using Ansible template.
+
+
+### Load the remote server IP and you can see index.php file loading
