@@ -1,0 +1,12 @@
+---
+- name: Creating user Bob
+  ansible.builtin.user:
+   name: Bob
+   uid: 1900
+   shell: /bin/bash
+
+
+- name: Copying .my.cnf file to user home directory via Jinja templating
+  ansible.builtin.template:
+     src: templates/my.cnf.j2
+     dest: /home/Bob/.my.cnf
