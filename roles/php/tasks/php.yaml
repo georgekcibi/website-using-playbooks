@@ -1,0 +1,7 @@
+---
+- name: Installing PHP and its dependicies
+  ansible.builtin.apt:
+    name: "{{ item.name }}"
+    state: present
+    update_cache: yes
+  loop: "{{ php_variables }}"
