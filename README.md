@@ -10,3 +10,7 @@ The MYSQL password is also reset and the new password is defined as a variable i
 ```
 git clone https://github.com/georgekcibi/website-using-playbooks.git
 ```
+
+```
+ansible-playbook --vault-password-file password-file playbook.yaml
+```
